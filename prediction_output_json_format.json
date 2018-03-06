@@ -1,0 +1,12 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "prediction": 6.34
+        },
+        {
+            "id": 1,
+            "prediction": 10.67
+        }
+    ]
+}
