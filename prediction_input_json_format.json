@@ -15,12 +15,12 @@
   "internet": "no",
   "romantic": "no",
   "freetime": 3,
+  "goout": 4,
   "famrel": 4,
   "courses": [
     {
       "id": 1,
       "studytime": 2,
-      "goout": 4,
       "failures": 0,
       "absences": 6,
       "famsup": "no",
@@ -30,7 +30,6 @@
     {
       "id": 1,
       "studytime": 2,
-      "goout": 4,
       "failures": 0,
       "absences": 6,
       "famsup": "no",
