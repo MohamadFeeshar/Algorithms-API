@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<script>
+
+var user = {
+  "sex": "M",
+  "age": 18,
+  "famsize": "GT3",
+  "Pstatus": "A",
+  "Medu": 4,
+  "Fedu": 4,
+  "Mjob": "at_home",
+  "Fjob": "teacher",
+  "guardian": "mother",
+  "traveltime": 2,
+  "health": 3,
+  "activities": "no",
+  "higher": "yes",
+  "internet": "no",
+  "romantic": "no",
+  "freetime": 3,
+  "goout": 4,
+  "famrel": 4,
+  "courses": [
+    {
+      "id": 1,
+      "studytime": 2,
+      "failures": 0,
+      "absences": 6,
+      "famsup": "no",
+      "paid": "no",
+      "midterm": 5
+    },
+    {
+      "id": 1,
+      "studytime": 2,
+      "failures": 0,
+      "absences": 6,
+      "famsup": "no",
+      "paid": "no",
+      "midterm": 10
+    }
+  ]
+};
+
+$.ajax({
+            url: 'http://127.0.0.1:5000/prediction',
+            type: 'POST',
+            contentType: 'application/json',
+            data: JSON.stringify(user),
+            success: function (data) {
+                console.log(data);
+            }
+        });
+
+</script>
+</body>
+</html>
