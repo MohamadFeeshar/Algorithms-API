@@ -2,8 +2,11 @@ from prediction.data_format import get_data_array
 from prediction.neural_network import get_prediction
 from flask import Flask, jsonify, request
 from os import path
+from flask_cors import CORS
+
 
 app = Flask(__name__)
+CORS(app)
 
 site_root = path.realpath(path.dirname(__file__)) + '/'
 format_dataset_path = path.join(site_root, 'static/prediction', 'format_dataset.csv')
